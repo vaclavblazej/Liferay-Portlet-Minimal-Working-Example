@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+
+	<portlet>
+		<portlet-name>graph-controller-portlet</portlet-name>
+		<display-name>graph-controller-portlet</display-name>
+		<portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/views/view.xhtml</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+		</supports>
+
+		<supported-locale>cs</supported-locale>
+		<supported-locale>en</supported-locale>
+		<portlet-info>
+			<title>graph-controller-portlet</title>
+			<short-title>graph-controller-portlet</short-title>
+		</portlet-info>
+	</portlet>
+</portlet-app>

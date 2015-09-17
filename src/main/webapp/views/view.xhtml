@@ -1,0 +1,26 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:pcc="http://cz.cvut/portalCommonComponent"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        >
+    <h:head>
+
+    </h:head>
+
+    <h:body>
+        <h:form>
+            Your courses
+            <ui:repeat value="#{viewBean.strings}" var="course">
+                <div><h:outputText value="#{course}"/></div>
+            </ui:repeat>
+            <h:dataTable value="#{viewBean.strings}" var="course">
+                <h:column>
+                    <f:facet name="header">
+                        #{course}
+                    </f:facet>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</f:view>
