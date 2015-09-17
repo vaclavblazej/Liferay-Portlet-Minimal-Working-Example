@@ -3,7 +3,7 @@
         "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN"
         "facelet-taglib_1_0.dtd">
 <facelet-taglib>
-    <namespace>http://cz.cvut/portalCommonComponent</namespace>
+    <namespace>http://cz.vaclavblazej/testCommonComponent</namespace>
 
     <tag>
         <tag-name>secureContent</tag-name>
